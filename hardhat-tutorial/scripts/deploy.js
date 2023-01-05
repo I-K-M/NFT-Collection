@@ -3,7 +3,7 @@ require("dotenv").config({ path: ".env" });
 const { WHITELIST_CONTRACT_ADDRESS, METADATA_URL } = require("../constants");
 
 async function main() {
-  const whitelistContract = WHITELIST_CONTRACT_ADDRESS;  const ONE_YEAR_IN_SECS = 365 * 24 * 60 * 60;
+  const whitelistContract = WHITELIST_CONTRACT_ADDRESS;
   const metadataURL = METADATA_URL;
 
   const cryptoDevsContract = await ethers.getContractFactory("CryptoDevs");
